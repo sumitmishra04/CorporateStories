@@ -1,7 +1,27 @@
-.login{
+.login-card--info{
+    height: 300px;
+    width:120%;
+    font-size: 1.4rem;
+    text-transform: uppercase;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: -10%;
+}
+.formcontrol{
+    height: 3.4rem;
+    border:none;
+    width: 100%;
+    padding: .5rem;
+    border-bottom: 1px solid #555;
+    background-color: transparent;
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#fff;
+    transition: all 0.5s;  
+}
+.formcontrol:focus{
+    outline: none;
 }
 .btn__login{
         width: 100%;
@@ -16,7 +36,11 @@
             animation: moveUpDown 0.7s ease-out;
         }
 }
-
+.login-links{
+    display: flex;
+    justify-content: space-between;
+    margin-top:-20%; 
+}
 .links{
     &:active{
             transform: scale(1.1);
