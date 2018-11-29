@@ -10,39 +10,7 @@
 .card__login{
     height:450px;
     width:25vw;
-}
-.card--login-info{
-    height: 350px;
-    width:60%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-}
-.login-links{
-    display: flex;
-    justify-content: space-between;
-    margin-top:-20%;
-}
-
-.btn__login{
-        letter-spacing: 2px;
-        background-color: #e25454;       
-        box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.6);
-        transition: transform 0.2s;
-        backface-visibility: hidden;
-        cursor: pointer;
-        margin-top: -25%; 
-        &:active{
-            animation: moveUpDown 0.7s ease-out;
-        }
-}
-
-.links:active{
-        transform: scale(1.1);
-        animation: moveUpDown 0.4s ease-out;
-}
-.form-group:nth-child(2){
-    margin-top: -15%;
+    justify-content: center;
+    align-items: center;
 }

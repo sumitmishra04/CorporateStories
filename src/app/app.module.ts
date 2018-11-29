@@ -2,10 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { RegisterUserComponent } from './register-user/register-user.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegisterUserComponent,
+    LoginPageComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule
