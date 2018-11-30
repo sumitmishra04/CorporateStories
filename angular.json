@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "themes/theme-default/theme-default.scss",
               "src/styles.css"
             ],
             "scripts": []

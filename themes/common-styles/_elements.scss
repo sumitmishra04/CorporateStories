@@ -1,0 +1,59 @@
+@keyframes moveUpDown{
+    0%{
+        transform: translateY(-1px)
+    }
+    50%{
+      transform: translateY(-3px)
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
+
+.btn{
+    text-transform: uppercase;
+    color:$color-base;
+    border-radius: 100px;
+    height:34px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.links{
+    text-transform: capitalize;
+    color:$color-text-dark-2;
+    text-decoration: none;
+    font-size: 1.2rem;
+    backface-visibility: hidden;
+}
+
+.formcontrol{
+    height: 3.4rem;
+    border:none;
+    width: 100%;
+    padding: .5rem;
+    border-bottom: 1px solid $color-text-dark-3;
+    background-color: transparent;
+    font-size: 1.6rem;
+    font-family: inherit;
+    color:$color-base;
+    transition: all 0.5s;  
+}
+
+.formcontrol:focus{
+    outline: none;
+}
+
+.btn__login{
+    width: 100%;
+    letter-spacing: 2px;
+    background-color: $color-btn-primary;       
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.6);
+    transition: transform 0.2s;
+    backface-visibility: hidden;
+    cursor: pointer;
+    margin-top: -25%; 
+    &:active{
+        animation: moveUpDown 0.7s ease-out;
+    }
+}
