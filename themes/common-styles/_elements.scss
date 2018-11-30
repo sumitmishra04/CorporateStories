@@ -17,11 +17,24 @@
     height:34px;
     line-height: 34px;
     text-align: center;
+    &__login{
+        width: 100%;
+        letter-spacing: 2px;
+        background-color: $color-primary;       
+        box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.6);
+        transition: transform 0.2s;
+        backface-visibility: hidden;
+        cursor: pointer;
+        margin-top: -25%; 
+        &:active{
+            animation: moveUpDown 0.7s ease-out;
+        }
+    }
 }
 
 .links{
     text-transform: capitalize;
-    color:$color-text-dark-2;
+    color:$color-text-dark-4;
     text-decoration: none;
     font-size: 1.2rem;
     backface-visibility: hidden;
@@ -32,28 +45,17 @@
     border:none;
     width: 100%;
     padding: .5rem;
-    border-bottom: 1px solid $color-text-dark-3;
-    background-color: transparent;
+    background-color: $color-base;
     font-size: 1.6rem;
     font-family: inherit;
-    color:$color-base;
-    transition: all 0.5s;  
+    color:$color-text-dark-2;
+    transition: all 0.2s;  
+    border-radius: 2px;
 }
 
 .formcontrol:focus{
     outline: none;
+    border-bottom: 3px solid $color-primary;
+    box-shadow: 0 0.4rem 0.8rem rgba(0,0,0,0.4)
 }
 
-.btn__login{
-    width: 100%;
-    letter-spacing: 2px;
-    background-color: $color-btn-primary;       
-    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.6);
-    transition: transform 0.2s;
-    backface-visibility: hidden;
-    cursor: pointer;
-    margin-top: -25%; 
-    &:active{
-        animation: moveUpDown 0.7s ease-out;
-    }
-}

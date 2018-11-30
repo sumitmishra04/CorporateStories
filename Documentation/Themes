@@ -7,3 +7,11 @@ Nesting of global styles and theme is as follows:
 6. _variables.scss and common-styles.scss are imported in theme default
 7. styles for the entire webpage common across all pages are put in theme-default file
 8. elements of webpage which are reusable are kept in _elements.scss
+
+Adding scss after ng new project
+Make a change in angular-cli.json
+"schematics": {
+        "@schematics/angular:component": { "styleext": "scss"}
+      },
+
+or run ng config schematics.@schematics/angular:component.styleext scss in cli
