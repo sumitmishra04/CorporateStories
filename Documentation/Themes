@@ -1,0 +1,9 @@
+Nesting of global styles and theme is as follows:
+1. Styles very specific to component resides in component
+2. Styles that are related to component but need theme variables like color need to be in commonstyles folder
+3. theme defined colors are present in _color.scss
+4. component specific global variables are present in _default-variables
+5. 3 & 4 are imported in _variables.scss file 
+6. _variables.scss and common-styles.scss are imported in theme default
+7. styles for the entire webpage common across all pages are put in theme-default file
+8. elements of webpage which are reusable are kept in _elements.scss
