@@ -1,28 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
 .main{
-    height: 100vh;
+    height: 85vh;
     background-image: linear-gradient( to right,
          rgba(0,0,0,0.6 ) , 
         rgba(0,0,0,0.3) ), 
     url("../../src/assets/image/loginp.jpg");
     background-size: cover;
     background-position: top;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 }
-
-.login-card{
-    // background-image: linear-gradient( rgba(255,255,255, 0.4) , rgba(255,255,255, 0.4) );
-    border-radius: 5px;
-    height:450px;
-    width:25vw;
+.login-page{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.login-card{
+    height:450px;
+    width:25vw;
     margin-left: 10%;
 }
+.login-text-area{
+    color: white;
+    font-family: inherit;
+    flex:1;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
 
-
+.primary-header{
+    backface-visibility: hidden;
+    animation: movetoright 1s ease-out ;
+}
+.secondary-header{
+    backface-visibility: hidden;
+    animation: movetoleft 1s ease-out ;
+}
 
 
