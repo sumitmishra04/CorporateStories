@@ -45,12 +45,16 @@
     border:none;
     width: 100%;
     padding: .5rem;
-    background-color: $color-base;
+    background-color: rgba($color-base,0.5); 
     font-size: 1.6rem;
     font-family: inherit;
     color:$color-text-dark-2;
     transition: all 0.2s;  
     border-radius: 2px;
+    &::-webkit-input-placeholder {
+        font-weight: 400;
+        color:#555
+    }
 }
 
 .formcontrol:focus{

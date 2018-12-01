@@ -33,6 +33,38 @@
     position: absolute;
     left:-79%;
 }
+
+.password-icon{
+    height:2rem;
+    fill:#333;
+    stroke-width: 0.5px; 
+    width:3rem;
+}
+.add-password-icon{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.password__input{
+    margin-right: -1.5rem;
+    width: 85%;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+.password-button{
+    border: none;
+    background-color: rgba(white,0.5); ;
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: 0.2rem;
+    width:4rem;
+    &:focus{
+        outline: none;
+        cursor: pointer;
+    }   
+    &:hover{
+        cursor: pointer;    
+    }     
+}
 .circle{
     height:120px;
     width: 120px;
