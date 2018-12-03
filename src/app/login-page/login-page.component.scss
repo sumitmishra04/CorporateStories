@@ -48,8 +48,8 @@
     align-content: center;
 }
 .password__input{
-    margin-right: -1.5rem;
-    width: 85%;
+    // margin-right: -1.5rem;
+    // width: 85%;
     border-top-right-radius: 0rem;
     border-bottom-right-radius: 0rem;
 }
@@ -58,14 +58,14 @@
     background-color: rgba(white,0.5); ;
     border-top-right-radius: .2rem;
     border-bottom-right-radius: 0.2rem;
-    width:4rem;
     &:focus{
         outline: none;
         cursor: pointer;
     }   
     &:hover{
         cursor: pointer;    
-    }     
+    }
+    
 }
 .circle{
     height:120px;

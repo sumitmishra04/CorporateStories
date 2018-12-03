@@ -38,7 +38,7 @@
 
 .btn{
     text-transform: uppercase;
-    color:$color-primary;
+    color:$color-base;
     border-radius: 100px;
     height:34px;
     line-height: 34px;
@@ -46,7 +46,7 @@
     &__login{
         width: 100%;
         letter-spacing: 2px;
-        background-color: $color-base;       
+        background-color: $color-primary;       
         box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.6);
         transition: transform 0.2s;
         backface-visibility: hidden;
@@ -87,5 +87,9 @@
     outline: none;
     border-bottom: 3px solid $color-primary;
     box-shadow: 0 0.4rem 0.8rem rgba(0,0,0,0.4)
+}
+.password__input:focus+.password-button {
+    outline: none;
+    border-bottom: 3px solid $color-primary;
 }
 
