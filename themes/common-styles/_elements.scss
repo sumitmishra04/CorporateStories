@@ -43,6 +43,8 @@
     height:34px;
     line-height: 34px;
     text-align: center;
+    outline: none;
+    border: none;
     &__login{
         width: 100%;
         letter-spacing: 2px;
@@ -53,6 +55,7 @@
         cursor: pointer;
         margin-top: -17%; 
         &:active{
+            outline: none;
             animation: moveUpDown 0.7s ease-out;
         }
     }
