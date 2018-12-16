@@ -1,40 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
-.main{
-    height: 100vh;
-    background-image: linear-gradient( to right,
-         rgba(0,0,0,0.6 ) , 
-        rgba(0,0,0,0.3) ), 
+.main {
+  min-height: 100%;
+  background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)),
     url("../../src/assets/image/loginp.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-}
-.login-page{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.login-card{
-    height:450px;
-    width:25vw;
-    margin-left: 10%;
-}
-.login-text-area{
-    color: white;
-    font-family: inherit;
-    flex:1;
-    line-height: 1.5;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 20px;
 }
 
-.primary-header{
-    backface-visibility: hidden;
-    animation: movetoright 1s ease-out ;
+.para1 {
+  background-image: 
+    url("../../src/assets/image/laugh.jpg");
 }
-.secondary-header{
-    backface-visibility: hidden;
-    animation: movetoleft 1s ease-out ;
-}
+.para2 {
+    background-image: 
+      url("../../src/assets/image/journey.jpg");
+  }
+  .para3{ 
+      background-image: 
+    url("../../src/assets/image/tour.jpg");
+
+  }
+  .para1,.para2,.para3{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    width: 100%;
+    min-height: 400px;
+    opacity: 0.65;
+  }
 
 
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  height: 450px;
+  width: 25vw;
+  margin-left: 10%;
+}
+
+.login-text-area {
+  color: white;
+  font-family: inherit;
+  flex: 1;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+.primary-header {
+  backface-visibility: hidden;
+  animation: movetoright 1s ease-out;
+}
+
+.secondary-header {
+  backface-visibility: hidden;
+  animation: movetoleft 1s ease-out;
+}

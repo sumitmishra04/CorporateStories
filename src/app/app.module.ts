@@ -1,25 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
-import { RegisterUserComponent } from './register-user/register-user.component';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { HomePageComponent } from './User/home-page/home-page.component';
+import { AppRoutingModule } from './app-routing.module';
+import { LoginModule } from './login/login.module';
+import { UserComponent } from './user/user.component';
+import { AuthGuard } from './login/auth-guard.service';
+import { ParallaxDirective } from './parallax.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterUserComponent,
-    LoginPageComponent,
-    ForgotPasswordComponent,
-    HomePageComponent
+    UserComponent,
+    ParallaxDirective
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    LoginModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
