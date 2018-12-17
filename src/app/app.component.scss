@@ -3,7 +3,7 @@
 }
 .icon-1{
     fill:#555;
-    width: 120px
+    width: 120px;
 }
 p{
     font-size: 1.6rem
@@ -29,4 +29,16 @@ p{
     font-size:25px;
     color: #f7f7f7;
     text-transform: uppercase;
+}
+
+.heading-text, h4{
+    text-transform: uppercase;
+}
+
+.page-footer{
+    background: #777;
+    li, .footer-copyright{
+        font-size: 1.6rem
+    }
+    
 }
