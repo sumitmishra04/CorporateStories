@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase';
 
 @Component({
@@ -6,13 +6,13 @@ import * as firebase from 'firebase';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  
-  ngOnInit(){
+export class AppComponent implements OnInit {
+
+  ngOnInit() {
     firebase.initializeApp({
-      apiKey: "AIzaSyARBt5yNQAuySGhBwB_1js1CKa0qLUmliw",
-      authDomain: "http-angular-project-69a6b.firebaseapp.com"
+      apiKey: 'AIzaSyARBt5yNQAuySGhBwB_1js1CKa0qLUmliw',
+      authDomain: 'http-angular-project-69a6b.firebaseapp.com'
     });
-    
+
   }
 }

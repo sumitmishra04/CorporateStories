@@ -10,18 +10,18 @@ import { Router } from '@angular/router';
 })
 export class ForgotPasswordComponent implements OnInit {
 
-  constructor(private authService : AuthService; private router: Router) { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
   }
 
-  onSubmit(f:NgForm){
-    if(f.valid){
+  onSubmit(f: NgForm) {
+    if(f.valid) {
       this.authService.resetPassword(f.value.email).then(() => {
         console.log('email sent');
-        this.router.navigate(['/'])
+        this.router.navigate(['/']);
       })
-      .catch(error => console.log(error));;
+      .catch(error => console.log(error));
     }
   }
 
